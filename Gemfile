@@ -2,10 +2,11 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 
 gem 'rails', '4.0.0'
+gem 'bootstrap-sass', '2.3.2.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails'
   gem 'guard-rspec', '1.2.1'
 end
 
@@ -16,6 +17,7 @@ group :test do
   gem 'growl', '1.0.3'
 end
 
+gem 'haml-rails'
 gem 'sass-rails', '4.0.0'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.0'
