@@ -16,6 +16,7 @@ group :test do
   gem 'capybara', '2.1.0'
   gem 'rb-fsevent', '0.9.1', :require => false
   gem 'growl', '1.0.3'
+  gem 'factory_girl_rails', '4.2.1'
 end
 
 gem 'haml-rails'
@@ -30,8 +31,7 @@ group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
 
-# postgres db for heroku, no pg on my machine, not using heroku for this run
-#group :production do 
-#  gem 'pg', '0.15.1'
-#end
+group :production do 
+  gem 'pg', '0.15.1'
+end
 
